@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+}
+
+/* Center Area */
+
+.window {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  /* Covers the sidebar, header and calender */
+  width: 100%;
+  height: 98%;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar {
+  width: 100px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 100%;
+  background-color: #ff69b4;
+  margin: 10px;
+}
+
+.calendar {
+  /* Covers the Header and Calender Rows */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 85%;
+  height: 100%;
+  background-color: pink;
+  margin: 10px;
+}
+
+/* Calendar */
+
+.calendar-row {
+  max-width: 100%;
+  min-height: 5%;
+  border-radius: 20px 20px 0px 0px;
+  border-color: black;
+  border: 1px solid black;
+  background-color: aqua;
+}
+
+.calendar-days {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: blueviolet;
+  width: 100%;
+  min-height: 95%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* Calender Cell's */
+
+.cell {
+  width: 100%;
+  height: 25%;
+}
+
+.top-cell-row {
+  background-color: orange;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom-cell-row {
+  background-color: beige;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.end-cell {
+  border-right: 1px solid black;
+}
+
+.time {
+  width: 25%;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.time-text {
+  /* Time text */
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.add { /* Button Div */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-button { /* Button */
+  -webkit-border-radius: 11;
+  -moz-border-radius: 11;
+  border-radius: 11px;
+  box-shadow: 1px;
+  border: none;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #0099ff;
+  min-width: 40%;
+  min-height: 60%;
+  text-decoration: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+.add-button:hover {
+  background: #ffffff;
+  color: #0099ff;
+  text-decoration: none;
+}
